@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="38732" started-at="2020-05-10T22:40:56 IST" finished-at="2020-05-10T22:41:35 IST">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="38732" started-at="2020-05-10T22:40:56 IST" finished-at="2020-05-10T22:41:35 IST">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4cf777e8]" name="setUp" is-config="true" duration-ms="5847" started-at="2020-05-10T22:41:12 IST" finished-at="2020-05-10T22:41:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@4cf777e8]" name="verifyLoginPageTitleTest" duration-ms="2914" started-at="2020-05-10T22:41:20 IST" finished-at="2020-05-10T22:41:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="signUpLinkTest()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@4cf777e8]" name="signUpLinkTest" duration-ms="938" started-at="2020-05-10T22:41:23 IST" finished-at="2020-05-10T22:41:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpLinkTest -->
+        <test-method status="PASS" signature="loginTest()[pri:4, instance:com.qa.hubspot.tests.LoginPageTest@4cf777e8]" name="loginTest" duration-ms="9847" started-at="2020-05-10T22:41:24 IST" finished-at="2020-05-10T22:41:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@4cf777e8]" name="tearDown" is-config="true" duration-ms="683" started-at="2020-05-10T22:41:34 IST" finished-at="2020-05-10T22:41:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+      <class name="com.qa.hubspot.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@59ec2012]" name="setUp" is-config="true" duration-ms="15604" started-at="2020-05-10T22:40:56 IST" finished-at="2020-05-10T22:41:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.hubspot.tests.HomePageTest@59ec2012]" name="verifyHomePageTitleTest" duration-ms="46" started-at="2020-05-10T22:41:18 IST" finished-at="2020-05-10T22:41:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="verifyHomePageHeaderTest()[pri:2, instance:com.qa.hubspot.tests.HomePageTest@59ec2012]" name="verifyHomePageHeaderTest" duration-ms="685" started-at="2020-05-10T22:41:18 IST" finished-at="2020-05-10T22:41:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageHeaderTest -->
+        <test-method status="PASS" signature="getLoggedInUserTest()[pri:3, instance:com.qa.hubspot.tests.HomePageTest@59ec2012]" name="getLoggedInUserTest" duration-ms="1407" started-at="2020-05-10T22:41:19 IST" finished-at="2020-05-10T22:41:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLoggedInUserTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.HomePageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="710" started-at="2020-05-10T22:41:34 IST" finished-at="2020-05-10T22:41:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
