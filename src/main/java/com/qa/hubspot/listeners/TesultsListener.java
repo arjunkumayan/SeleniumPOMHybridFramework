@@ -56,7 +56,7 @@ public class TesultsListener extends BasePage implements ITestListener {
 		testCase.put("result", "fail");
 		testCase.put("params", getTestParams(iTestResult));
 		List<String> files = new ArrayList<String>();
-		//files.add(getScreenshot());
+		files.add(getScreenshot());
 		testCase.put("files", files);
 
 		testCases.add(testCase);
