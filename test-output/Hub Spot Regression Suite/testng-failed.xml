@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Hub Spot Regression Suite]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Hub Spot Regression Suite]">
   <listeners>
     <listener class-name="com.qa.hubspot.listeners.ExtentReportListener"/>
-    <listener class-name="com.qa.hubspot.listeners.TesultsListener"/>
   </listeners>
-  <test thread-count="2" name="Hub Spot Functional Regression Test -FF(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Hub Spot Functional Regression Test(failed)">
     <classes>
-      <class name="com.qa.hubspot.tests.LoginPageTest">
+      <class name="com.qa.hubspot.tests.HomePageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyShowPassowordLinkText"/>
+          <include name="getLoggedInUserTest"/>
           <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
-    </classes>
-  </test> <!-- Hub Spot Functional Regression Test -FF(failed) -->
-  <test thread-count="2" name="Hub Spot Functional Regression Test - chrome(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.qa.hubspot.tests.LoginPageTest">
-        <methods>
+          <include name="verifyHomePageHeaderTest"/>
+          <include name="verifyHomePageTitleTest"/>
           <include name="setUp"/>
-          <include name="verifyShowPassowordLinkText"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+      </class> <!-- com.qa.hubspot.tests.HomePageTest -->
     </classes>
-  </test> <!-- Hub Spot Functional Regression Test - chrome(failed) -->
+  </test> <!-- Hub Spot Functional Regression Test(failed) -->
 </suite> <!-- Failed suite [Hub Spot Regression Suite] -->
