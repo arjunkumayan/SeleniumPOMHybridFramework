@@ -47,7 +47,7 @@ public class ContactsPageTest {
 	public void verifyContactsPageTitle() {
 		String title = contactsPage.getContactsPageTitle();
 		System.out.println("contacts page title is: " + title);
-		Assert.assertEquals(title, "Contacts");
+		Assert.assertEquals(title, "Contacts1");
 	}
 
 	@DataProvider
