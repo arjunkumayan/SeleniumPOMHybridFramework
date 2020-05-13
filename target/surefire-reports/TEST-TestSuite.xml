@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="52.167" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="49.087" tests="9" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -26,24 +26,26 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Users\asingh6766\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5449455137009955923.tmp"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.2\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_144/bin/server;C:/Program Files/Java/jre1.8.0_144/bin;C:/Program Files/Java/jre1.8.0_144/lib/amd64;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\apache-maven-3.6.2\bin;D:\Work_Soft\Gradle\gradle-6.1-bin\gradle-6.1\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Users\asingh6766\AppData\Roaming\npm;D:\Users\asingh6766\AppData\Roaming\npm\node_modules;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Users\asingh6766\AppData\Local\Microsoft\WindowsApps;D:\Users\asingh6766\AppData\Local\Programs\Git\cmd;D:\Users\asingh6766\AppData\Local\Programs\Microsoft VS Code\bin;D:\Users\asingh6766\Desktop;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\apache-maven-3.6.2\bin;D:\Work_Soft\Gradle\gradle-6.1-bin\gradle-6.1\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Users\asingh6766\AppData\Roaming\npm;D:\Users\asingh6766\AppData\Roaming\npm\node_modules;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Users\asingh6766\scoop\shims;D:\Users\asingh6766\AppData\Local\Microsoft\WindowsApps;D:\Users\asingh6766\AppData\Local\Programs\Git\cmd;D:\Users\asingh6766\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.2\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\lib\jansi-native"/>
     <property name="user.home" value="D:\Users\asingh6766"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="user.name" value="asingh6766"/>
-    <property name="java.class.path" value="D:\Users\asingh6766\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.13.0.20190716-1623\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.2\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -51,22 +53,44 @@
     <property name="java.version" value="1.8.0_144"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\Users\asingh6766\eclipse-workspace\SeleniumPOMFramework\EMBEDDED"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.2\bin\.."/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyForgotPasswordLinkText" classname="com.qa.hubspot.tests.LoginPageTest" time="5.345"/>
-  <testcase name="verifyShowPassowordLinkText" classname="com.qa.hubspot.tests.LoginPageTest" time="0.08"/>
-  <testcase name="verifyLoginPageTitleTest" classname="com.qa.hubspot.tests.LoginPageTest" time="0.034"/>
-  <testcase name="verifyHomePageTitleTest" classname="com.qa.hubspot.tests.HomePageTest" time="0.024"/>
-  <testcase name="verifyContactsPageTitle" classname="com.qa.hubspot.tests.ContactsPageTest" time="0.027"/>
-  <testcase name="signUpLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="0.097"/>
-  <testcase name="verifyHomePageHeaderTest" classname="com.qa.hubspot.tests.HomePageTest" time="0.093"/>
-  <testcase name="loginTest" classname="com.qa.hubspot.tests.LoginPageTest" time="5.272"/>
-  <testcase name="getLoggedInUserTest" classname="com.qa.hubspot.tests.HomePageTest" time="0.247"/>
+  <testcase name="verifyForgotPasswordLinkText" classname="com.qa.hubspot.tests.LoginPageTest" time="5.13"/>
+  <testcase name="verifyShowPassowordLinkText" classname="com.qa.hubspot.tests.LoginPageTest" time="0.033"/>
+  <testcase name="verifyLoginPageTitleTest" classname="com.qa.hubspot.tests.LoginPageTest" time="0.011"/>
+  <testcase name="verifyHomePageTitleTest" classname="com.qa.hubspot.tests.HomePageTest" time="0.017"/>
+  <testcase name="verifyContactsPageTitle" classname="com.qa.hubspot.tests.ContactsPageTest" time="1.536">
+    <failure message="expected [Contacts1] but found [Contacts]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Contacts1] but found [Contacts]
+	at com.qa.hubspot.tests.ContactsPageTest.verifyContactsPageTitle(ContactsPageTest.java:50)
+</failure>
+    <system-out><![CDATA[verifyHomePageTitleTest passed!
+browser name is: chrome
+verifyContactsPageTitle started!
+contacts page title is: Contacts
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 81.0.4044.138 (8c6c7ba89cc9453625af54f11fd83179e23450fa-refs/branch-heads/4044@{#999}) on port 5405
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+May 13, 2020 11:13:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1589391808.736][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589391809.253][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589391812.243][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589391812.568][SEVERE]: Timed out receiving message from renderer: 0.100
+[1589391813.604][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="signUpLinkTest" classname="com.qa.hubspot.tests.LoginPageTest" time="0.064"/>
+  <testcase name="verifyHomePageHeaderTest" classname="com.qa.hubspot.tests.HomePageTest" time="0.053"/>
+  <testcase name="loginTest" classname="com.qa.hubspot.tests.LoginPageTest" time="3.376"/>
+  <testcase name="getLoggedInUserTest" classname="com.qa.hubspot.tests.HomePageTest" time="0.107"/>
 </testsuite>

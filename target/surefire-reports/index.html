@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Hub_Spot_Regression_Suite">
-              <span class="suite-name border-passed">Hub Spot Regression Suite</span>
+              <span class="suite-name border-failed">Hub Spot Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Hub_Spot_Regression_Suite" class="hide-methods failed suite-Hub_Spot_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Hub_Spot_Regression_Suite -->
+                      <a href="#" panel-name="suite-Hub_Spot_Regression_Suite" class="show-methods failed suite-Hub_Spot_Regression_Suite"> (show)</a> <!-- show-methods failed suite-Hub_Spot_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Hub_Spot_Regression_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Regression_Suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="verifyContactsPageTitle">verifyContactsPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Hub_Spot_Regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,11 +127,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Regression_Suite" title="com.qa.hubspot.tests.LoginPageTest" hash-for-method="signUpLinkTest">signUpLinkTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Hub_Spot_Regression_Suite" title="com.qa.hubspot.tests.ContactsPageTest" hash-for-method="verifyContactsPageTitle">verifyContactsPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -157,6 +166,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Hub_Spot_Regression_Suite" class="panel Hub_Spot_Regression_Suite">
+          <div class="suite-Hub_Spot_Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.ContactsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactsPageTitle">
+                  </a> <!-- verifyContactsPageTitle -->
+                  <span class="method-name">verifyContactsPageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Contacts1] but found [Contacts]
+	at com.qa.hubspot.tests.ContactsPageTest.verifyContactsPageTitle(ContactsPageTest.java:50)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hub_Spot_Regression_Suite-class-failed -->
+          <div class="suite-Hub_Spot_Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.hubspot.tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLoggedInUserTest">
+                  </a> <!-- getLoggedInUserTest -->
+                  <span class="method-name">getLoggedInUserTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageHeaderTest">
+                  </a> <!-- verifyHomePageHeaderTest -->
+                  <span class="method-name">verifyHomePageHeaderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Hub_Spot_Regression_Suite-class-passed -->
           <div class="suite-Hub_Spot_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -198,50 +255,6 @@
                   <a name="verifyShowPassowordLinkText">
                   </a> <!-- verifyShowPassowordLinkText -->
                   <span class="method-name">verifyShowPassowordLinkText</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hub_Spot_Regression_Suite-class-passed -->
-          <div class="suite-Hub_Spot_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.hubspot.tests.ContactsPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyContactsPageTitle">
-                  </a> <!-- verifyContactsPageTitle -->
-                  <span class="method-name">verifyContactsPageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Hub_Spot_Regression_Suite-class-passed -->
-          <div class="suite-Hub_Spot_Regression_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.hubspot.tests.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getLoggedInUserTest">
-                  </a> <!-- getLoggedInUserTest -->
-                  <span class="method-name">getLoggedInUserTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePageHeaderTest">
-                  </a> <!-- verifyHomePageHeaderTest -->
-                  <span class="method-name">verifyHomePageHeaderTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePageTitleTest">
-                  </a> <!-- verifyHomePageTitleTest -->
-                  <span class="method-name">verifyHomePageTitleTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -307,44 +320,44 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyForgotPasswordLinkText')
 data.setCell(0, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(0, 3, 5351);
+data.setCell(0, 3, 5136);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(1, 3, 5276);
+data.setCell(1, 3, 3378);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getLoggedInUserTest')
-data.setCell(2, 2, 'com.qa.hubspot.tests.HomePageTest')
-data.setCell(2, 3, 249);
+data.setCell(2, 1, 'verifyContactsPageTitle')
+data.setCell(2, 2, 'com.qa.hubspot.tests.ContactsPageTest')
+data.setCell(2, 3, 1528);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'signUpLinkTest')
-data.setCell(3, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(3, 3, 104);
+data.setCell(3, 1, 'getLoggedInUserTest')
+data.setCell(3, 2, 'com.qa.hubspot.tests.HomePageTest')
+data.setCell(3, 3, 108);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyHomePageHeaderTest')
-data.setCell(4, 2, 'com.qa.hubspot.tests.HomePageTest')
-data.setCell(4, 3, 94);
+data.setCell(4, 1, 'signUpLinkTest')
+data.setCell(4, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(4, 3, 67);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyShowPassowordLinkText')
-data.setCell(5, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(5, 3, 80);
+data.setCell(5, 1, 'verifyHomePageHeaderTest')
+data.setCell(5, 2, 'com.qa.hubspot.tests.HomePageTest')
+data.setCell(5, 3, 52);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLoginPageTitleTest')
+data.setCell(6, 1, 'verifyShowPassowordLinkText')
 data.setCell(6, 2, 'com.qa.hubspot.tests.LoginPageTest')
-data.setCell(6, 3, 40);
+data.setCell(6, 3, 34);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyContactsPageTitle')
-data.setCell(7, 2, 'com.qa.hubspot.tests.ContactsPageTest')
-data.setCell(7, 3, 27);
+data.setCell(7, 1, 'verifyHomePageTitleTest')
+data.setCell(7, 2, 'com.qa.hubspot.tests.HomePageTest')
+data.setCell(7, 3, 18);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyHomePageTitleTest')
-data.setCell(8, 2, 'com.qa.hubspot.tests.HomePageTest')
-data.setCell(8, 3, 26);
+data.setCell(8, 1, 'verifyLoginPageTitleTest')
+data.setCell(8, 2, 'com.qa.hubspot.tests.LoginPageTest')
+data.setCell(8, 3, 12);
 window.suiteTableData['Hub_Spot_Regression_Suite']= { tableData: data, tableDiv: 'times-div-Hub_Spot_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Hub_Spot_Regression_Suite">
               </div> <!-- times-div-Hub_Spot_Regression_Suite -->
             </div> <!-- times-div -->
@@ -363,16 +376,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.hubspot.tests.LoginPageTest</span>
+              <span class="ignored-class-name">com.qa.hubspot.tests.ContactsPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">login_InvalidTestCases</span>
+                <span class="ignored-method-name">createContactsTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.hubspot.tests.ContactsPageTest</span>
+              <span class="ignored-class-name">com.qa.hubspot.tests.LoginPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">createContactsTest</span>
+                <span class="ignored-method-name">login_InvalidTestCases</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -394,80 +407,82 @@ return data;
               <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUp(null)</span>
-                <span class="method-start">13118 ms</span>
+                <span class="method-start">13375 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyForgotPasswordLinkText</span>
-                <span class="method-start">18794 ms</span>
+                <span class="method-start">19054 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyShowPassowordLinkText</span>
-                <span class="method-start">24164 ms</span>
+                <span class="method-start">24200 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPageTitleTest</span>
-                <span class="method-start">24254 ms</span>
+                <span class="method-start">24237 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">24298 ms</span>
+                <span class="method-start">24252 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">24328 ms</span>
+                <span class="method-start">24273 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyContactsPageTitle</span>
-                <span class="method-start">42165 ms</span>
+                <span class="method-start">39283 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42195 ms</span>
+                <span class="method-start">41370 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">signUpLinkTest</span>
-                <span class="method-start">42904 ms</span>
+                <span class="method-start">42001 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageHeaderTest</span>
-                <span class="method-start">43010 ms</span>
+                <span class="method-start">42071 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">43107 ms</span>
+                <span class="method-start">42125 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getLoggedInUserTest</span>
-                <span class="method-start">48386 ms</span>
+                <span class="method-start">45504 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48639 ms</span>
+                <span class="method-start">45614 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.hubspot.tests.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49348 ms</span>
+                <span class="method-start">46266 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
