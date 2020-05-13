@@ -72,7 +72,7 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testrunners/testng_Regression.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testrunners/testng_Regression_Without_Parameters.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
@@ -192,5 +192,12 @@
   <artifactId>tesults-testng</artifactId>
   <version>1.0.2</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+<dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>itext</artifactId>
+    <version>2.1.7</version>
+</dependency>
+
   </dependencies>
 </project>

@@ -6,9 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.google.common.base.Objects;
 import com.qa.hubspot.base.BasePage;
 import com.qa.hubspot.config.Credentials;
 import com.qa.hubspot.page.HomePage;
@@ -35,17 +37,18 @@ public class HomePageTest {
 	
 	@BeforeTest(alwaysRun= true)
 	@Parameters(value= {"browser"})
-	public void setUp(String browser) throws InterruptedException
+	public void setUp(@Optional String browser) throws InterruptedException
 	{
 		String browserName = null;
 		basePage = new BasePage();
 		prop = basePage.init_properties();
 		// this condition will handle the browser name either from property file or from the TestNg-parallel.xml file for parallel execution
-		if(browser.equals(null)) {
-			   browserName = prop.getProperty("browser");
-			} else {
-				browserName=browser;
-			}
+		if(Objects.equal(browser, null)|| Objects.equal(browser, "") || browser.isEmpty()){
+			 browserName = prop.getProperty("browser");
+		}else{
+			browserName = browser;
+		}
+		
 		
 		//String browserName = prop.getProperty("browser");
 		driver = basePage.init_driver(browserName);

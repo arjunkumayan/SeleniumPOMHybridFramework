@@ -32,7 +32,9 @@ public class ContactsPageTest {
 	public void setUp() {
 		basePage = new BasePage();
 		prop = basePage.init_properties();
+		
 		String browser = prop.getProperty("browser");
+		
 		driver = basePage.init_driver(browser);
 		driver.get(prop.getProperty("url"));
 		loginPage = new LoginPage(driver);
@@ -54,7 +56,7 @@ public class ContactsPageTest {
 		return data;
 	}
 
-	@Test(priority = 2, dataProvider = "getContactsTestData")
+	@Test(priority = 2, dataProvider = "getContactsTestData", enabled=false)
 	public void createContactsTest(String email, String firstName, String lastName, String jobTitle) {
 		contactsPage.createNewContact(email, firstName, lastName, jobTitle);
 		/*
