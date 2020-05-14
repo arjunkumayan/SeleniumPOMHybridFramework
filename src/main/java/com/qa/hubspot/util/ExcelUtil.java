@@ -24,6 +24,9 @@ public class ExcelUtil {
 			FileInputStream ip = new FileInputStream(TESTDATA_SHEET_PATH);
 			book = WorkbookFactory.create(ip);
 			sheet = book.getSheet(sheetName);
+			
+		int row = sheet.getLastRowNum();
+		int column = sheet.getRow(0).getLastCellNum();
 			System.out.println("Row is: "+sheet.getLastRowNum());
 			System.out.println("Column is: "+sheet.getRow(0).getLastCellNum());
 
