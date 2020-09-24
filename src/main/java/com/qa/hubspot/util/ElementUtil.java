@@ -3,6 +3,7 @@ package com.qa.hubspot.util;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,6 +17,7 @@ public class ElementUtil extends BasePage {
 	WebDriverWait wait;
 	Properties prop;
 	JavaScriptUtil jsUtil;
+	
 	
 	public ElementUtil(WebDriver driver)
 	{   
@@ -126,6 +128,25 @@ public class ElementUtil extends BasePage {
 	}
 	
 	
+	public static void pageScrollToView(WebDriver driver,By locator) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(locator));
+		
+	}
+	public void scrollPageDown() {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+		//js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+	}
+
+	
+	public static Boolean waitForElementPresent(WebDriver driver,By locator,int timeout) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		return true;
+		
+	}
 	
 	
 	

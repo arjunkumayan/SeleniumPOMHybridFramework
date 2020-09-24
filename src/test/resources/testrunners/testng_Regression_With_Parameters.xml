@@ -13,10 +13,11 @@
 
 	<test name="Hub Spot Functional Regression Test">
 	  <parameter name="browser" value="chrome" />
-			<classes>
+		<classes>
 			<class name="com.qa.hubspot.tests.LoginPageTest" />
 			<class name="com.qa.hubspot.tests.HomePageTest" />
 			<class name="com.qa.hubspot.tests.ContactsPageTest" />
 		</classes>
+		
 	</test>
 </suite> 

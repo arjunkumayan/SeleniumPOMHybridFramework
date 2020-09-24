@@ -11,7 +11,7 @@ public class JavaScriptUtil {
 	public JavaScriptUtil(WebDriver driver) {
 		this.driver = driver;
 	}
-
+	
 	public void flash(WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		String bgcolor = element.getCssValue("backgroundColor");
@@ -20,6 +20,8 @@ public class JavaScriptUtil {
 			changeColor(bgcolor, element);// 2
 		}
 	}
+
+	
 
 	private void changeColor(String color, WebElement element) {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);

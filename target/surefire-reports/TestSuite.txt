@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 49.087 s <<< FAILURE! - in TestSuite
-verifyContactsPageTitle(com.qa.hubspot.tests.ContactsPageTest)  Time elapsed: 1.536 s  <<< FAILURE!
-java.lang.AssertionError: expected [Contacts1] but found [Contacts]
-	at com.qa.hubspot.tests.ContactsPageTest.verifyContactsPageTitle(ContactsPageTest.java:50)
-
